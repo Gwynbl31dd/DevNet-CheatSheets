@@ -19,7 +19,6 @@ source  venv/bin/activate
 # This will save the bin and the lib inside the venv folder
 ```
 
-
 Upgrade pip
 ```bash
 python -m pip install --upgrade pip
@@ -337,6 +336,8 @@ Or from a `string` to an `integer` or `float`:
 "device hostname ipaddress".split(" ")
 ",".join(['device', 'hostname', 'ipaddress'])
 ```
+
+New way of formating (Same as .format())
 
 ```python
 tool = "git clone "
