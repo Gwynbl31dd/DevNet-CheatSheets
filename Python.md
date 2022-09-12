@@ -11,6 +11,8 @@ pip freeze # Raw
 pip list # Tabular
 ```
 
+NOTE: You can add combine pip and freeze to build your requirements.txt ``pip freeze > requirements. txt``
+
 Create a virtual environment
 
 ```bash
