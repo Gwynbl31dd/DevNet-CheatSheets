@@ -626,11 +626,11 @@ def function_name(arg_1, arg_2):
 ## Built in data type
 
 
-| Name  type()       | Example                                                                |
-| -----------        | ------------                                                           |
-| `list`             | `["ssh", "tcp", "ftp", 19.2, 20.1]`                                    |
-| `tuple`            | `("FillmoreDC", "NorthWestRegion")`                                    |
-| `dictionary  dict` | `{"ipv4address": "192.168.0.1", "traffic": "inbound", "port": 40044}`  |
+| Name  type()       | Example                                                                | Notes       |
+| -----------        | ------------                                                           | ------------ |
+| `list`             | `["ssh", "tcp", "ftp", 19.2, 20.1]`                                    | Ordered list of items,Mutable (can be changed after created),Items can be different data types, Can contain duplicate items |
+| `tuple`            | `("FillmoreDC", "NorthWestRegion")`                                    | Just like a list; except: Immutable (cannot be changed) |
+| `dictionary  dict` | `{"ipv4address": "192.168.0.1", "traffic": "inbound", "port": 40044}`  | Unordered key-value pairs,Keys don’t have to be same data type,Values don’t have to be same data type ,Keys are unique; must be immutable |
 
 
 
