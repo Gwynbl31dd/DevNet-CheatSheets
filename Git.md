@@ -1,6 +1,8 @@
 # Git cheatsheet
 
-## Commits
+## Basic
+
+### Commits
 
 Commit 
 
@@ -42,7 +44,20 @@ Go back several commit
 git checkout <commit_branch_head>~<number>
 ```
 
-## Branches
+### Reset
+
+Reset a commit (The commit never happened.. But cannot be shared with remote)
+```
+git reset
+# example: git reset HEAD^
+```
+
+```
+git revert
+# example: git revert HEAD
+```
+
+### Branches
 
 branch early, and branch often 
 
@@ -72,10 +87,47 @@ Git Rebase (Keep the commit history instead of a simple merge)
 git rebase <branch_name>
 ```
 
+Interactive rebase
+
+```
+git rebase -i
+# Example git rebase -i HEAD~4
+```
+
 Branch forcing
 
 Reassigne a branch 
 
 ```
 git branch -f <branch_name> <commit>
+```
+
+### Tags
+
+```
+git tag <tag> <branch>
+```
+
+## Advance
+
+### Cherry-pick
+
+```
+git cherry-pick <Commit1> <Commit2> <...>
+```
+
+### Change commit history
+
+amend change a commit (Technically, creates a new commit)
+
+```
+git commit --amend ...
+```
+
+### Describe
+
+```
+git describe <ref>
+# generate an output: <tag>_<numCommits>_g<hash>
+# where tag is the closest ancestor tag in history, numCommits is how many commits away that tag is, and <hash> is the hash of the commit being described.
 ```
