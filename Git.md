@@ -131,3 +131,21 @@ git describe <ref>
 # generate an output: <tag>_<numCommits>_g<hash>
 # where tag is the closest ancestor tag in history, numCommits is how many commits away that tag is, and <hash> is the hash of the commit being described.
 ```
+
+### Checkout to anther parent
+
+```
+git checkout <ref>^<parent>
+# example: git checkout HEAD^2
+# example 2: git checkout HEAD~^2~2
+```
+
+## Remote
+
+```
+git clone <url>
+```
+
+```
+git fetch
+```
