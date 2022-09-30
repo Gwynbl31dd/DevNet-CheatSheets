@@ -164,6 +164,12 @@ Specify where to fetch
 git fetch <remote> <source>:<destination>
 ```
 
+Create a new branch from a remote branch (Just copy it)
+
+```
+git fetch <remote> :<remote_branch>
+```
+
 Download the changes and sync them (Just like git fetch and it merge)
 
 ```
