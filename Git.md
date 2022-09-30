@@ -146,6 +146,45 @@ git checkout <ref>^<parent>
 git clone <url>
 ```
 
+Only download the changes (And put them in origin)
+
 ```
 git fetch
 ```
+
+Fetch only specific branch
+
+```
+git fetch <remote> <branch>
+```
+
+Specify where to fetch
+
+```
+git fetch <remote> <source>:<destination>
+```
+
+Download the changes and sync them (Just like git fetch and it merge)
+
+```
+git pull
+# Can also rebase with git pull --rebase
+```
+
+publish (default behavior depends on your push.default)
+
+```
+git push
+```
+
+```
+git push <remote> <name>
+```
+
+Push to another branch 
+
+```
+git push <remote> <source>:<destination>
+# Example: git push origin foo^^:main
+```
+
