@@ -188,3 +188,9 @@ git push <remote> <source>:<destination>
 # Example: git push origin foo^^:main
 ```
 
+Delete a remote branch
+
+```
+git push <remote> :<destination> 
+#This pushed nothing to the remote
+```
